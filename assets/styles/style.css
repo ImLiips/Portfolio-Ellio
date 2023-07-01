@@ -16,10 +16,10 @@ body {
   text-align: center;
   background: rgba(0, 0, 0, 0.705);
   font-family: Poppins, serif;
+  background: url(../img/header-background2.jpeg) center/cover fixed;
 }
 
 header {
-  background: url(../img/header-background2.jpeg) center/cover;
   margin: 0 auto;
   height: 100vh;
 }
@@ -88,6 +88,34 @@ header .header-text .btn1:hover {
   border-radius: 25px 5px;
   transition: 0.3s ease-out;
   background: rgba(172, 39, 199, 0.699);
+}
+
+.section1 {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.section1 h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+.section1 .projets-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 80px 0;
+}
+.section1 .projets-container .projet1, .section1 .projets-container .projet2 {
+  transform: translateX(-2000px);
+  opacity: 0;
+  transition: 3s ease-out;
+}
+.section1 .projets-container img {
+  height: 250px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.808);
+}
+.section1 .projets-container img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-out;
 }
 
 .pop-up {

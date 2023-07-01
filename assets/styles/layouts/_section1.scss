@@ -1,0 +1,32 @@
+.section1 {
+
+    max-width: 1100px;
+    margin: 0 auto;
+
+    h2{
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+    .projets-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 80px 0;
+
+        .projet1, .projet2 {
+            transform: translateX(-2000px);
+            opacity: 0;
+            transition: 3s ease-out;
+        }
+    
+        img {
+            height: 250px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.808);
+
+            &:hover {
+                transform: scale(1.1);
+                transition: 0.3s ease-out;
+            }
+        }
+    }
+}
