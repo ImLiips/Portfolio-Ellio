@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+$font1: Poppins, serif;
+$color1: rgb(172, 39, 199);
+
+@mixin childCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin alignChildren($space) {
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+li {
+    list-style: none;
+}
+body {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.705);
+    font-family: $font1;
+}
